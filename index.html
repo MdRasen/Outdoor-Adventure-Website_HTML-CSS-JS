@@ -15,7 +15,40 @@
 </head>
 
 <body>
+    <nav class="nav-bar">
+        <a href="#"><img class="logo" src="assets/white-logo.png" alt="white-logo"></a>
+        <ul class="nav-links" id="sidemenu">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="btn">TAKE ACTION</a></li>
+            <i class="fa-solid fa-xmark close" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars menu-bar" onclick="openmenu()"></i>
+    </nav>
+    <header>
+        <div class="header-contents">
+            <h2>Explore the Colourful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="btn">LEARN MORE</a>
+        </div>
+    </header>
 
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        var menubar = document.getElementById("menu-bar");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-400px";
+        }
+    </script>
 </body>
 
 </html>
