@@ -115,17 +115,20 @@ header {
         position: absolute;
         top: 30px;
         left: 30px;
+        width: 120px;
     }
 
     .nav-links {
         position: fixed;
         flex-direction: column;
-        width: 50%;
-        right: -400px;
+        width: 60%;
+        right: -600px;
         height: 100vh;
         justify-content: center;
         background: #484872;
-        padding-top: 80px;
+        padding-top: 30px;
+        border-bottom-left-radius: 100px;
+        transition: right 0.5s;
     }
 
     .nav-links li {
@@ -140,12 +143,19 @@ header {
         font-size: 30px;
         cursor: pointer;
         color: whitesmoke;
+        transition: transform 0.5s;
     }
 
     .nav-links .close {
         display: block;
         font-size: 30px;
+        margin-top: 20px;
         cursor: pointer;
         color: whitesmoke;
+        transition: transform 0.5s;
+    }
+
+    .nav-bar .menu-bar:hover, .nav-links .close:hover {
+        transform: scale(1.1);
     }
 }
